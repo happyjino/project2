@@ -92,6 +92,9 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
     model.add(layers.Conv2D(64, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
     model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
     model.add(Dropout(0.25))  
+    model.add(layers.Conv2D(128, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
+    model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
+    model.add(Dropout(0.25))  
 
     model.add(layers.Flatten())
     model.add(layers.Dense(512,activation='relu'))
@@ -107,13 +110,13 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
     #     layers.Flatten(),
     #     layers.Dense(512,activation='relu'),
     #     layers.Dense(10, activation='softmax')
-    # ])
+    # ]
 
     model.compile(optimizer = tf.optimizers.Adam(0.0005), loss='categorical_crossentropy', metrics=['accuracy'])
     model.summary()
     
     datagen.fit(x_train)
-    model.fit(datagen.flow(x_train, y_train, batch_size=150), epochs=20, validation_data = (x_test, y_test),verbose=1)
+    model.fit(datagen.flow(x_train, y_train, batch_size=150), epochs=40, validation_data = (x_test, y_test),verbose=1)
 
     print('Train Accuracy = %f' %model.evaluate(x_train,y_train)[1])
     print('Validation Accuracy = %f' %model.evaluate(x_test,y_test)[1])
@@ -202,15 +205,15 @@ x_test = x_test.reshape(10000,28,28)
 x_train_combined = np.concatenate((x_train, jpeg_images), axis=0)
 y_train_combined = np.concatenate((y_train, jpeg_labels), axis=0)
 
-test_image_path = './my_writing_dataset/test/71.JPG'
+test_image_path = './my_writing_dataset/test/82.JPG'
 
 # ##step2_CNN_classifier
-# CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
+CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
 
 
 # model = tf.keras.models.load_model(f'{save_dir}/CNN_classifier_model.keras')
 # image_evaluation(model, test_image_path)
-Evaluation(test_image_path)
+# Evaluation(test_image_path)
 
 
 # num = random.randint(1,10000)
