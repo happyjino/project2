@@ -118,7 +118,7 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
     model.summary()
     
     datagen.fit(x_train)
-    model.fit(datagen.flow(x_train, y_train, batch_size=150), epochs=40, validation_data = (x_test, y_test),verbose=1)
+    model.fit(datagen.flow(x_train, y_train, batch_size=200), epochs=30, validation_data = (x_test, y_test),verbose=1)
 
     print('Train Accuracy = %f' %model.evaluate(x_train,y_train)[1])
     print('Validation Accuracy = %f' %model.evaluate(x_test,y_test)[1])
@@ -212,14 +212,14 @@ y_train_combined = np.concatenate((y_train, jpeg_labels), axis=0)
 test_image_path = './my_writing_dataset/test'
 
 # ##step2_CNN_classifier
-# CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
+CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
 
 
-for label in os.listdir(test_image_path):
+# for label in os.listdir(test_image_path):
+#     test_image = f'./my_writing_dataset/test/{label}'
+#     Evaluation(test_image)
     # num = random.randint(1,10000)
     # Evaluation2(x_test[num])
-    test_image = f'./my_writing_dataset/test/{label}'
-    Evaluation(test_image)
 
 
 # num = random.randint(1,10000)
