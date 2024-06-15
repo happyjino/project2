@@ -31,7 +31,7 @@ def load_and_preprocess_image(image_path):
     return img_array
 
 def random_invert_img(x):
-    noise_factor = 0.2  # 노이즈 강도 조절
+    noise_factor = 0.4  # 노이즈 강도 조절
     noise = np.random.randn(*x.shape) * noise_factor
     x = x + noise
     x = np.clip(x, 0., 1.)  # 이미지 값을 [0, 1] 범위로 제한
@@ -133,9 +133,9 @@ def Evaluation(test_image_path):
         
     predictions = model.predict(img)
     print(test_image_path)
-    # for i in range(10):
-    #     formatted_number = f"{predictions[0][i]:.3f}"
-    #     print(str(i) + ": " + formatted_number)
+    for i in range(10):
+        formatted_number = f"{predictions[0][i]:.3f}"
+        print(str(i) + ": " + formatted_number)
     predicted_class = np.argmax(predictions)
     predicted_probability = predictions[0][predicted_class]
 
