@@ -31,7 +31,7 @@ def load_and_preprocess_image(image_path):
     return img_array
 
 def random_invert_img(x):
-    noise_factor = 0.3  # 노이즈 강도 조절
+    noise_factor = 0.2  # 노이즈 강도 조절
     noise = np.random.randn(*x.shape) * noise_factor
     x = x + noise
     x = np.clip(x, 0., 1.)  # 이미지 값을 [0, 1] 범위로 제한
@@ -61,7 +61,6 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
         width_shift_range=0.1, # 무작위로 수평 이동
         height_shift_range=0.1,# 무작위로 수직 이동
         shear_range=0.5,       # 무작위로 전단 변환
-        zoom_range=0.5,        # 무작위로 확대/축소
         fill_mode='nearest',    # 빈 픽셀을 채우는 방법
         preprocessing_function=random_invert_img
     )
@@ -88,17 +87,17 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
     model = tf.keras.Sequential()
     model.add(layers.Conv2D(32, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
     model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
-    model.add(Dropout(0.25))
+    model.add(Dropout(0.1))
     model.add(layers.Conv2D(64, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
     model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
-    model.add(Dropout(0.25))  
+    model.add(Dropout(0.1))  
     model.add(layers.Conv2D(128, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
     model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
-    model.add(Dropout(0.25))  
+    model.add(Dropout(0.1))  
 
     model.add(layers.Flatten())
     model.add(layers.Dense(512,activation='relu'))
-    model.add(Dropout(0.25))  
+    model.add(Dropout(0.1))  
     model.add(layers.Dense(10,activation='softmax'))
 
     ##모델 구성 표현_2
