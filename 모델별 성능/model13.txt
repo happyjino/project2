@@ -1,0 +1,308 @@
+(class) C:\Users\wlsgh\class\project2>C:/Users/wlsgh/anaconda3/envs/class/python.exe c:/Users/wlsgh/class/project2/MNIST_classifier.py
+2024-06-16 05:51:38.576431: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.1/1 [==============================] - 0s 131ms/step
+./my_writing_dataset/test/01.JPG
+0: 0.805
+1: 0.000
+2: 0.001
+3: 0.000
+4: 0.003
+5: 0.005
+6: 0.013
+7: 0.023
+8: 0.002
+9: 0.149
+1/1 [==============================] - 0s 78ms/step
+./my_writing_dataset/test/02.JPG
+0: 0.004
+1: 0.000
+2: 0.001
+3: 0.000
+4: 0.002
+5: 0.004
+6: 0.026
+7: 0.001
+8: 0.004
+9: 0.958
+1/1 [==============================] - 0s 73ms/step
+./my_writing_dataset/test/03.JPG
+0: 0.000
+1: 0.000
+2: 0.004
+3: 0.002
+4: 0.068
+5: 0.004
+6: 0.001
+7: 0.001
+8: 0.003
+9: 0.917
+1/1 [==============================] - 0s 78ms/step
+./my_writing_dataset/test/11.JPG
+0: 0.070
+1: 0.160
+2: 0.134
+3: 0.115
+4: 0.093
+5: 0.037
+6: 0.060
+7: 0.093
+8: 0.096
+9: 0.141
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001790C719C10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has 
+reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing 
+and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - 0s 81ms/step
+./my_writing_dataset/test/2.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 1.000
+4: 0.000
+5: 0.000
+6: 0.000
+7: 0.000
+8: 0.000
+9: 0.000
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001790C8C7670> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has 
+reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing 
+and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - 0s 86ms/step
+./my_writing_dataset/test/21.JPG
+0: 0.098
+1: 0.069
+2: 0.134
+3: 0.102
+4: 0.112
+5: 0.061
+6: 0.080
+7: 0.089
+8: 0.116
+9: 0.139
+1/1 [==============================] - 0s 81ms/step
+./my_writing_dataset/test/31.JPG
+0: 0.035
+1: 0.090
+2: 0.096
+3: 0.071
+4: 0.311
+5: 0.056
+6: 0.033
+7: 0.089
+8: 0.042
+9: 0.178
+1/1 [==============================] - 0s 80ms/step
+./my_writing_dataset/test/41.JPG
+0: 0.008
+1: 0.557
+2: 0.031
+3: 0.030
+4: 0.082
+5: 0.052
+6: 0.107
+7: 0.022
+8: 0.052
+9: 0.060
+1/1 [==============================] - 0s 79ms/step
+./my_writing_dataset/test/51.JPG
+0: 0.016
+1: 0.033
+2: 0.056
+3: 0.249
+4: 0.052
+5: 0.187
+6: 0.050
+7: 0.156
+8: 0.028
+9: 0.173
+1/1 [==============================] - 0s 78ms/step
+./my_writing_dataset/test/61.JPG
+0: 0.094
+1: 0.048
+2: 0.110
+3: 0.095
+4: 0.114
+5: 0.103
+6: 0.095
+7: 0.101
+8: 0.096
+9: 0.145
+1/1 [==============================] - 0s 82ms/step
+./my_writing_dataset/test/71.JPG
+0: 0.001
+1: 0.313
+2: 0.062
+3: 0.055
+4: 0.182
+5: 0.105
+6: 0.020
+7: 0.210
+8: 0.014
+9: 0.037
+1/1 [==============================] - 0s 81ms/step
+./my_writing_dataset/test/81.JPG
+0: 0.001
+1: 0.011
+2: 0.016
+3: 0.020
+4: 0.215
+5: 0.053
+6: 0.002
+7: 0.040
+8: 0.151
+9: 0.491
+1/1 [==============================] - 0s 81ms/step
+./my_writing_dataset/test/82.JPG
+0: 0.006
+1: 0.710
+2: 0.021
+3: 0.059
+4: 0.039
+5: 0.027
+6: 0.018
+7: 0.053
+8: 0.026
+9: 0.041
+1/1 [==============================] - 0s 79ms/step
+./my_writing_dataset/test/91.JPG
+0: 0.057
+1: 0.038
+2: 0.087
+3: 0.105
+4: 0.055
+5: 0.041
+6: 0.029
+7: 0.187
+8: 0.061
+9: 0.340
+1/1 [==============================] - 0s 88ms/step
+./my_writing_dataset/test/92.JPG
+0: 0.000
+1: 0.000
+2: 0.000
+3: 0.002
+4: 0.021
+5: 0.321
+6: 0.000
+7: 0.002
+8: 0.003
+9: 0.651
+1/1 [==============================] - 0s 77ms/step
+./my_writing_dataset/test/t0_1.jpg
+0: 0.835
+1: 0.000
+2: 0.000
+3: 0.000
+4: 0.000
+5: 0.000
+6: 0.000
+7: 0.001
+8: 0.000
+9: 0.164
+1/1 [==============================] - 0s 78ms/step
+./my_writing_dataset/test/t1_1.jpg
+0: 0.000
+1: 0.997
+2: 0.000
+3: 0.000
+4: 0.000
+5: 0.000
+6: 0.000
+7: 0.002
+8: 0.000
+9: 0.000
+1/1 [==============================] - 0s 79ms/step
+./my_writing_dataset/test/t2_1.jpg
+0: 0.000
+1: 0.003
+2: 0.930
+3: 0.001
+4: 0.000
+5: 0.000
+6: 0.000
+7: 0.055
+8: 0.000
+9: 0.011
+1/1 [==============================] - 0s 80ms/step
+./my_writing_dataset/test/t3_1.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 1.000
+4: 0.000
+5: 0.000
+6: 0.000
+7: 0.000
+8: 0.000
+9: 0.000
+1/1 [==============================] - 0s 83ms/step
+./my_writing_dataset/test/t4_1.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 0.000
+4: 0.994
+5: 0.000
+6: 0.000
+7: 0.003
+8: 0.001
+9: 0.002
+1/1 [==============================] - 0s 84ms/step
+./my_writing_dataset/test/t5_1.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 0.000
+4: 0.000
+5: 1.000
+6: 0.000
+7: 0.000
+8: 0.000
+9: 0.000
+1/1 [==============================] - 0s 81ms/step
+./my_writing_dataset/test/t6_1.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 0.000
+4: 0.000
+5: 0.096
+6: 0.898
+7: 0.000
+8: 0.001
+9: 0.004
+1/1 [==============================] - 0s 122ms/step
+./my_writing_dataset/test/t7_1.jpg
+0: 0.000
+1: 0.000
+2: 0.001
+3: 0.001
+4: 0.000
+5: 0.002
+6: 0.000
+7: 0.972
+8: 0.000
+9: 0.024
+1/1 [==============================] - 0s 81ms/step
+./my_writing_dataset/test/t8_1.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 0.000
+4: 0.000
+5: 0.000
+6: 0.000
+7: 0.000
+8: 0.999
+9: 0.001
+1/1 [==============================] - 0s 84ms/step
+./my_writing_dataset/test/t9_1.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 0.000
+4: 0.001
+5: 0.000
+6: 0.000
+7: 0.000
+8: 0.000
+9: 0.999

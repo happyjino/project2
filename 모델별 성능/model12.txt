@@ -23,7 +23,7 @@
 8: 0.003
 9: 0.116
 1/1 [==============================] - 0s 76ms/step
-./my_writing_dataset/test/03.JPG
+./my_writing_dataset/test/03.JPG-------------------------------------
 0: 0.000
 1: 0.000
 2: 0.004
@@ -65,7 +65,7 @@ WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_fun
 reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing 
 and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
 1/1 [==============================] - 0s 72ms/step
-./my_writing_dataset/test/21.JPG
+./my_writing_dataset/test/21.JPG-------------------------------------
 0: 0.021
 1: 0.048
 2: 0.289
@@ -77,7 +77,7 @@ and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
 8: 0.052
 9: 0.193
 1/1 [==============================] - 0s 78ms/step
-./my_writing_dataset/test/31.JPG
+./my_writing_dataset/test/31.JPG-------------------------------------
 0: 0.012
 1: 0.017
 2: 0.069
@@ -113,7 +113,7 @@ and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
 8: 0.001
 9: 0.037
 1/1 [==============================] - 0s 74ms/step
-./my_writing_dataset/test/61.JPG
+./my_writing_dataset/test/61.JPG-------------------------------------
 0: 0.003
 1: 0.001
 2: 0.001
@@ -149,7 +149,7 @@ and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
 8: 0.947
 9: 0.011
 1/1 [==============================] - 0s 74ms/step
-./my_writing_dataset/test/82.JPG
+./my_writing_dataset/test/82.JPG-------------------------------------
 0: 0.035
 1: 0.116
 2: 0.100
@@ -173,7 +173,7 @@ and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
 8: 0.023
 9: 0.648
 1/1 [==============================] - 0s 75ms/step
-./my_writing_dataset/test/92.JPG
+./my_writing_dataset/test/92.JPG-------------------------------------
 0: 0.000
 1: 0.000
 2: 0.000
