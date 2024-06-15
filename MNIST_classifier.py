@@ -213,6 +213,8 @@ test_image_path = './my_writing_dataset/test'
 
 
 for label in os.listdir(test_image_path):
+    # num = random.randint(1,10000)
+    # Evaluation2(x_test[num])
     test_image = f'./my_writing_dataset/test/{label}'
     Evaluation(test_image)
 
