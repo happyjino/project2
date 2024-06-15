@@ -133,6 +133,7 @@ def Evaluation(test_image_path):
     img = np.expand_dims(img, axis = 0)
         
     predictions = model.predict(img)
+    print(test_image_path)
     for i in range(10):
         formatted_number = f"{predictions[0][i]:.3f}"
         print(str(i) + ": " + formatted_number)
@@ -205,15 +206,15 @@ x_test = x_test.reshape(10000,28,28)
 x_train_combined = np.concatenate((x_train, jpeg_images), axis=0)
 y_train_combined = np.concatenate((y_train, jpeg_labels), axis=0)
 
-test_image_path = './my_writing_dataset/test/82.JPG'
+test_image_path = './my_writing_dataset/test'
 
 # ##step2_CNN_classifier
 CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
 
 
-# model = tf.keras.models.load_model(f'{save_dir}/CNN_classifier_model.keras')
-# image_evaluation(model, test_image_path)
-# Evaluation(test_image_path)
+# for label in os.listdir(test_image_path):
+#     test_image = f'./my_writing_dataset/test/{label}'
+#     Evaluation(test_image)
 
 
 # num = random.randint(1,10000)
