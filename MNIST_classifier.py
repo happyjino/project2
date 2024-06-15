@@ -93,10 +93,7 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
     model.add(Dropout(0.1))  
     model.add(layers.Conv2D(128, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
     model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
-    model.add(Dropout(0.1))
-    model.add(layers.Conv2D(256, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
-    model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
-    model.add(Dropout(0.1))  
+    model.add(Dropout(0.1)) 
 
     model.add(layers.Flatten())
     model.add(layers.Dense(512,activation='relu'))
@@ -212,12 +209,12 @@ y_train_combined = np.concatenate((y_train, jpeg_labels), axis=0)
 test_image_path = './my_writing_dataset/test'
 
 # ##step2_CNN_classifier
-CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
+# CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
 
 
-# for label in os.listdir(test_image_path):
-#     test_image = f'./my_writing_dataset/test/{label}'
-#     Evaluation(test_image)
+for label in os.listdir(test_image_path):
+    test_image = f'./my_writing_dataset/test/{label}'
+    Evaluation(test_image)
     # num = random.randint(1,10000)
     # Evaluation2(x_test[num])
 
