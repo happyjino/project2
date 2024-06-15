@@ -85,7 +85,7 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
     ### 학습 구조 만들기
     ##모델 구성 표현_1
     model = tf.keras.Sequential()
-    model.add(layers.Conv2D(32, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
+    model.add(layers.Conv2D(32, kernel_size=(5,5), input_shape=(28,28,1), padding='valid',activation='relu'))
     model.add(layers.MaxPool2D(pool_size=(2,2),padding='same'))
     model.add(Dropout(0.1))
     model.add(layers.Conv2D(64, kernel_size=(3,3), input_shape=(28,28,1), padding='same',activation='relu'))
@@ -137,9 +137,10 @@ def Evaluation(test_image_path):
         formatted_number = f"{predictions[0][i]:.3f}"
         print(str(i) + ": " + formatted_number)
     predicted_class = np.argmax(predictions)
+    predicted_probability = predictions[0][predicted_class]
 
     plt.imshow(image,cmap='gray')
-    plt.title(f'The predicted class of this image is "{predicted_class}"')
+    plt.title(f'{predicted_probability:.2f} is "{predicted_class}"')
     plt.show()
 
 ###############################################################################################################
@@ -193,8 +194,8 @@ jpeg_images = np.array(jpeg_images)
 jpeg_labels = np.array(jpeg_labels)
 jpeg_images = jpeg_images.reshape(-1, 28, 28)
 
-jpeg_images = np.repeat(jpeg_images, 100, axis=0)
-jpeg_labels = np.repeat(jpeg_labels, 100)
+jpeg_images = np.repeat(jpeg_images, 25, axis=0)
+jpeg_labels = np.repeat(jpeg_labels, 25)
 
 
 ### 코드 실행부
