@@ -133,9 +133,9 @@ def Evaluation(test_image_path):
         
     predictions = model.predict(img)
     print(test_image_path)
-    for i in range(10):
-        formatted_number = f"{predictions[0][i]:.3f}"
-        print(str(i) + ": " + formatted_number)
+    # for i in range(10):
+    #     formatted_number = f"{predictions[0][i]:.3f}"
+    #     print(str(i) + ": " + formatted_number)
     predicted_class = np.argmax(predictions)
     predicted_probability = predictions[0][predicted_class]
 
