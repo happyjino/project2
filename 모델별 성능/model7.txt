@@ -1,0 +1,185 @@
+./my_writing_dataset/test/01.JPG
+0: 0.924
+1: 0.000
+2: 0.004
+3: 0.001
+4: 0.000
+5: 0.002
+6: 0.008
+7: 0.003
+8: 0.007
+9: 0.051
+1/1 [==============================] - 0s 78ms/step
+./my_writing_dataset/test/02.JPG
+0: 0.876
+1: 0.000
+2: 0.001
+3: 0.001
+4: 0.000
+5: 0.001
+6: 0.002
+7: 0.001
+8: 0.003
+9: 0.117
+1/1 [==============================] - 0s 84ms/step
+./my_writing_dataset/test/03.JPG
+0: 0.002
+1: 0.000
+2: 0.001
+3: 0.015
+4: 0.009
+5: 0.039
+6: 0.002
+7: 0.003
+8: 0.024
+9: 0.905
+1/1 [==============================] - 0s 74ms/step
+./my_writing_dataset/test/11.JPG
+0: 0.027
+1: 0.639
+2: 0.026
+3: 0.027
+4: 0.027
+5: 0.038
+6: 0.032
+7: 0.059
+8: 0.066
+9: 0.059
+WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001B06FB49CA0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has 
+reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing 
+and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - 0s 75ms/step
+./my_writing_dataset/test/2.jpg
+0: 0.000
+1: 0.000
+2: 0.000
+3: 1.000
+4: 0.000
+5: 0.000
+6: 0.000
+7: 0.000
+8: 0.000
+9: 0.000
+WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001B06FC7C670> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has 
+reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing 
+and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+1/1 [==============================] - 0s 75ms/step
+./my_writing_dataset/test/21.JPG
+0: 0.102
+1: 0.107
+2: 0.071
+3: 0.078
+4: 0.072
+5: 0.071
+6: 0.065
+7: 0.114
+8: 0.139
+9: 0.181
+1/1 [==============================] - 0s 74ms/step
+./my_writing_dataset/test/31.JPG
+0: 0.026
+1: 0.119
+2: 0.088
+3: 0.056
+4: 0.234
+5: 0.051
+6: 0.044
+7: 0.140
+8: 0.093
+9: 0.148
+1/1 [==============================] - 0s 81ms/step
+./my_writing_dataset/test/41.JPG
+0: 0.027
+1: 0.452
+2: 0.031
+3: 0.013
+4: 0.232
+5: 0.079
+6: 0.054
+7: 0.023
+8: 0.059
+9: 0.029
+1/1 [==============================] - 0s 73ms/step
+./my_writing_dataset/test/51.JPG
+0: 0.001
+1: 0.003
+2: 0.003
+3: 0.175
+4: 0.008
+5: 0.719
+6: 0.014
+7: 0.040
+8: 0.002
+9: 0.034
+1/1 [==============================] - 0s 72ms/step
+./my_writing_dataset/test/61.JPG
+0: 0.103
+1: 0.019
+2: 0.028
+3: 0.069
+4: 0.049
+5: 0.294
+6: 0.203
+7: 0.036
+8: 0.114
+9: 0.085
+1/1 [==============================] - 0s 77ms/step
+./my_writing_dataset/test/71.JPG
+0: 0.001
+1: 0.868
+2: 0.048
+3: 0.004
+4: 0.026
+5: 0.007
+6: 0.010
+7: 0.037
+8: 0.001
+9: 0.000
+1/1 [==============================] - 0s 74ms/step
+./my_writing_dataset/test/81.JPG
+0: 0.001
+1: 0.004
+2: 0.052
+3: 0.007
+4: 0.025
+5: 0.004
+6: 0.001
+7: 0.008
+8: 0.813
+9: 0.086
+1/1 [==============================] - 0s 72ms/step
+./my_writing_dataset/test/82.JPG
+0: 0.022
+1: 0.648
+2: 0.034
+3: 0.015
+4: 0.049
+5: 0.076
+6: 0.039
+7: 0.054
+8: 0.037
+9: 0.026
+1/1 [==============================] - 0s 72ms/step
+./my_writing_dataset/test/91.JPG
+0: 0.032
+1: 0.063
+2: 0.036
+3: 0.057
+4: 0.079
+5: 0.054
+6: 0.040
+7: 0.084
+8: 0.118
+9: 0.437
+1/1 [==============================] - 0s 78ms/step
+./my_writing_dataset/test/92.JPG
+0: 0.000
+1: 0.000
+2: 0.000
+3: 0.005
+4: 0.006
+5: 0.848
+6: 0.000
+7: 0.001
+8: 0.000
+9: 0.139

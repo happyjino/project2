@@ -194,8 +194,8 @@ jpeg_images = np.array(jpeg_images)
 jpeg_labels = np.array(jpeg_labels)
 jpeg_images = jpeg_images.reshape(-1, 28, 28)
 
-jpeg_images = np.repeat(jpeg_images, 300, axis=0)
-jpeg_labels = np.repeat(jpeg_labels, 300)
+jpeg_images = np.repeat(jpeg_images, 100, axis=0)
+jpeg_labels = np.repeat(jpeg_labels, 100)
 
 
 ### 코드 실행부
@@ -209,12 +209,12 @@ y_train_combined = np.concatenate((y_train, jpeg_labels), axis=0)
 test_image_path = './my_writing_dataset/test'
 
 # ##step2_CNN_classifier
-CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
+# CNN_classifier(x_train_combined,x_test,y_train_combined,y_test)
 
 
-# for label in os.listdir(test_image_path):
-#     test_image = f'./my_writing_dataset/test/{label}'
-#     Evaluation(test_image)
+for label in os.listdir(test_image_path):
+    test_image = f'./my_writing_dataset/test/{label}'
+    Evaluation(test_image)
 
 
 # num = random.randint(1,10000)
