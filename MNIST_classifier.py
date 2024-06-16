@@ -60,7 +60,7 @@ def CNN_classifier(x_train, x_test, y_train, y_test):
         rotation_range=90,     # 무작위로 회전
         width_shift_range=0.1, # 무작위로 수평 이동
         height_shift_range=0.1,# 무작위로 수직 이동
-        shear_range=0.5,       # 무작위로 전단 변환
+        shear_range=0.3,       # 무작위로 전단 변환
         fill_mode='nearest',    # 빈 픽셀을 채우는 방법
         preprocessing_function=random_invert_img
     )
